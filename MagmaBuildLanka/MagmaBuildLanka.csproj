@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A9F2735-BCCF-4243-A4CC-AE7E72EF3AFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MagmaBuildLanka</RootNamespace>
+    <AssemblyName>MagmaBuildLanka</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDataTable.Designer.cs">
+      <DependentUpon>CustomerDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetailsForm.Designer.cs">
+      <DependentUpon>CustomerDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labour.cs" />
+    <Compile Include="LabourDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabourDetailsForm.Designer.cs">
+      <DependentUpon>LabourDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magma.Designer.cs">
+      <DependentUpon>Magma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs" />
+    <Compile Include="MaterialDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialDataTable.Designer.cs">
+      <DependentUpon>MaterialDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialDetailsForm.Designer.cs">
+      <DependentUpon>MaterialDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyConstractionProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyConstractionProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyConstractionProjectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyConstractionProjectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyConstractionProjectDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyConstractionProjectDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewProject .cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDataTable.Designer.cs">
+      <DependentUpon>ProjectDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDetailsForm.Designer.cs">
+      <DependentUpon>ProjectDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceDetailsForm.Designer.cs">
+      <DependentUpon>ServiceDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs" />
+    <Compile Include="StaffDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDataTable.Designer.cs">
+      <DependentUpon>StaffDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDetailsForm.Designer.cs">
+      <DependentUpon>StaffDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierDetailsForm.Designer.cs">
+      <DependentUpon>SupplierDetailsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomerDataTable.resx">
+      <DependentUpon>CustomerDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetailsForm.resx">
+      <DependentUpon>CustomerDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabourDetailsForm.resx">
+      <DependentUpon>LabourDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magma.resx">
+      <DependentUpon>Magma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialDataTable.resx">
+      <DependentUpon>MaterialDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialDetailsForm.resx">
+      <DependentUpon>MaterialDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDataTable.resx">
+      <DependentUpon>ProjectDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDetailsForm.resx">
+      <DependentUpon>ProjectDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ServiceDetailsForm.resx">
+      <DependentUpon>ServiceDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDataTable.resx">
+      <DependentUpon>StaffDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDetailsForm.resx">
+      <DependentUpon>StaffDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierDetailsForm.resx">
+      <DependentUpon>SupplierDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MyConstractionProjectDataSet.xsc">
+      <DependentUpon>MyConstractionProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyConstractionProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyConstractionProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyConstractionProjectDataSet.xss">
+      <DependentUpon>MyConstractionProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyConstractionProjectDataSet1.xsc">
+      <DependentUpon>MyConstractionProjectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MyConstractionProjectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyConstractionProjectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyConstractionProjectDataSet1.xss">
+      <DependentUpon>MyConstractionProjectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MyConstractionProjectDataSet2.xsc">
+      <DependentUpon>MyConstractionProjectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MyConstractionProjectDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyConstractionProjectDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyConstractionProjectDataSet2.xss">
+      <DependentUpon>MyConstractionProjectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2848%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2847%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-52-522211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2849%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2850%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide6.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\construction-site-tablet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2853%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new pp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide7.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new pp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
